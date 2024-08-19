@@ -1,0 +1,108 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    //add 新增
+    "letter-spacing": (
+      property: letter-spacing,
+      class: fs-letter,
+      values: (
+        12: 0.12em
+      )
+  ),
+    "text-align-last": (
+      property: text-align-last,
+      class: text-last,
+      values: (
+          start:  left,
+          end:    right,
+          center: center,
+          justify:justify
+      )
+  ),
+    "background-size": (
+      property: background-size,
+      class: bg-s,
+      values: (
+          cover:  cover,
+          contain:contain,
+          50:50%
+      )
+    ),
+    "background-position": (
+        property: background-position,
+        responsive: true,
+        class: bg-p,
+        values: (
+          t:    top,
+          center: center center,
+          b: bottom,
+        )
+    ),
+    "background-repeat": (
+      property: background-repeat,
+      class: bg-r,
+      values:(
+        no: no-repeat,
+        x: repeat-x,
+        y: repeat-y
+      )
+    ),
+    //修改
+    // Make an existing utility responsive()
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+    "line-height": map-merge(
+      map-get($utilities, "line-height"),
+      ( responsive: true ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-width": map-merge(
+      map-get($utilities, "border-width"),
+      ( responsive: true ),
+    ),
+    "background-color": map-merge(
+        map-get($utilities, "background-color"),
+        ( responsive: true ),
+    ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true ),
+    ),
+    //針對值增加選項
+    "text-align": map-merge(
+      map-get($utilities, "text-align"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "text-align"), "values"),
+          (justify: justify),
+        )
+      )
+    ),
+
+
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "line-height": map-merge(
+      map-get($utilities, "line-height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "line-height"), "values"),
+          (headings: $headings-line-height),
+        )
+      )
+    )
+  )
+);
