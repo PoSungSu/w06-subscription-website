@@ -1,0 +1,10 @@
+@each $name, $value in $bg-config {
+    $class: map-get($map: $value, $key: class);
+    $img: map-get($map: $value, $key: img);
+    $img-md: map-get($map: $value, $key: img-md);
+    $img-lg: map-get($map: $value, $key: img-lg);
+    
+    .bg-#{$class}{
+      @include bg-img($img, $img-md, $img-lg);
+    }
+  }

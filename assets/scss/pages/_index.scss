@@ -1,3 +1,9 @@
-.index-title {
-  font-size: 100px;
+.bg-banner {
+    height: calc( 100vh - 60px );
+}
+
+@include media-breakpoint-up(lg) {
+    .bg-banner {
+        height: calc( 100vh - 205px );
+    }
 }

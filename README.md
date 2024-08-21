@@ -1,8 +1,7 @@
 # 網頁切版直播班 Vite 範例 - Bootstrap 版本
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+### 需要修改font-weight
+
 
 
 ## 指令列表
@@ -17,8 +16,19 @@
   - assets # 靜態資源放置處
     - images # 圖片放置處
     - scss # SCSS 的樣式放置處
+      - components
+        - 
+      - config
+      - helpers
+      - maps
+      - mixins
+      - pages
+        - 
+      - utils
+
 
   - layout # ejs 模板放置處
+    - header.ejs  <<<未完成>>>
   - pages # 頁面放置處
 
 - JavaScript 程式碼可寫在 main.js 檔案

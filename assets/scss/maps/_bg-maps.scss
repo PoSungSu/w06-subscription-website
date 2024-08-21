@@ -1,0 +1,18 @@
+$bg-config:(
+  logo:(
+    class: 'logo',
+    img:     url(/assets/images/logo/logo-sm.svg),
+    img-lg:  url(/assets/images/logo/logo.svg),
+  ),
+  banner:(
+    class: 'banner',
+    img:     url(/assets/images/home/banner/banner-sm.png),
+    img-md:  url(/assets/images/home/banner/banner.png),
+  ),
+//   design:(
+//     class: 'design',
+//     img:     url(/assets/images/home/index-bg-sm.png),
+//     img-md:  url(/assets/images/home/index-bg-md.png),
+//     img-lg:  url(/assets/images/home/index-bg.png),
+//   ),
+);

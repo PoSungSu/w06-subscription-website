@@ -1,0 +1,22 @@
+@mixin bg-img ($img: none , $img-md: none, $img-lg: none) {
+    background-size: cover;   //「不變形」、「寬高等比例」、「在必要時局部裁切」
+    background-repeat: no-repeat;
+    background-position: center;
+    @if ($img-lg != none) {
+        background-image: $img;
+        @include media-breakpoint-up(md) {
+            background-image: $img-md;
+        }
+        @include media-breakpoint-up(lg) {
+            background-image: $img-lg;
+        }
+        
+    }@else if ($img-md != none) {
+        background-image: $img;
+        @include media-breakpoint-up(md) {
+            background-image: $img-md;
+        }
+    }@else {
+        background-image: $img;
+    }
+}

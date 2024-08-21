@@ -6,7 +6,8 @@ $utilities: map-merge(
       property: letter-spacing,
       class: fs-letter,
       values: (
-        12: 0.12em
+        5:  .05em,
+        12: .12em,
       )
   ),
     "text-align-last": (
@@ -53,6 +54,10 @@ $utilities: map-merge(
       map-get($utilities, "font-size"),
       ( responsive: true ),
     ),
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      ( responsive: true ),
+    ),
     "line-height": map-merge(
       map-get($utilities, "line-height"),
       ( responsive: true ),
@@ -87,6 +92,15 @@ $utilities: map-merge(
         )
       )
     ),
+    // "font-weight": map-merge(
+    //   map-get($utilities, "font-weight"),
+    //   (
+    //     values: map-merge(
+    //       map-get(map-get($utilities, "font-weight"), "values"),
+    //       (black: $font-weight-black),
+    //     )
+    //   )
+    // ),
 
 
   )
