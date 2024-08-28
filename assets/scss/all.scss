@@ -1,14 +1,14 @@
 //base
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0");
 @import "../../node_modules/bootstrap/scss/functions";
 
 
-//custom helpers
+//custom config
 @import "./config/googleFont";
 @import "./config/variables";
-@import "./config/base";
-@import "./config/colors";
+
+// @import "./config/colors";
 
 //custom maps
 @import "./maps/bg-maps";
@@ -28,7 +28,6 @@
 
 //custom utilities
 @import "../scss/utils/utilities";
-// @import "./utils/icons";
 
 
 // Layout & components
@@ -71,9 +70,17 @@
 @import "../../node_modules/bootstrap/scss/utilities/api";
 //==5.3版end==
 
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 //==Custom start==
+
+//components
+@import "./components/buttons";
+@import "./components/swiper";
+@import "./components/theme-box";
+
 //helpers
 @import "./helpers/bg-img-rwd";
+@import "./config/base";
 
 //layout
 @import "./layout/header";

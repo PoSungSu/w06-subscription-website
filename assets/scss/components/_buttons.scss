@@ -1,0 +1,16 @@
+.btn {
+    letter-spacing: 10%;
+    @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 16px 24px;
+    }
+}
+
+.btn-accent-hover:hover {
+    background-color: $accent-300;
+}
+
+.btn-gray-hover:hover {
+    background-color: $gray-500;
+}

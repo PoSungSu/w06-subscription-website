@@ -1,9 +1,20 @@
 .bg-banner {
     height: calc( 100vh - 60px );
 }
+.limited {
+    h4 {
+        color: $accent-200;
+    }
+}
 
 @include media-breakpoint-up(lg) {
     .bg-banner {
         height: calc( 100vh - 205px );
     }
+    .limited {
+        h4 {
+            color: $primary-400;
+        }
+    }
 }
+
