@@ -6,13 +6,18 @@ $theme-border-radius: 1.25rem;
 //     transition-timing-function: linear; /*轉場速度為均速*/
 //     transition-delay: 1s;               /*延後1秒才開始轉場*/
 // }
-.theme-link:hover::after {
+.theme-link:hover::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
+    // opacity: 0;
     border-radius: $theme-border-radius 0;
     background-color: rgba(33, 37, 41, 0.4);
+    // transition-property: opacity;
+    // transition-duration: 2s;
+    // transition-delay: 1s;
+    // transition: opacity .5s;
 }
 
 .theme-box {

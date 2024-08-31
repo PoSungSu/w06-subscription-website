@@ -1,0 +1,15 @@
+.badge-list {
+    gap: 10px;
+}
+.badge {
+    background-color: $primary-300;
+    line-height: 19.2px;
+    letter-spacing: 0.1em;
+    &:hover {
+        color: white;
+        background-color: $primary-400;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+    }
+}

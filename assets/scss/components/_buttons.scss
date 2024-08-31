@@ -1,5 +1,4 @@
 .btn {
-    letter-spacing: 10%;
     @include media-breakpoint-up(lg) {
         font-size: 20px;
         font-weight: bolder;

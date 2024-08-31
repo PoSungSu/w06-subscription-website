@@ -1,0 +1,15 @@
+.hotEvents {
+    .card {
+        // width: 324px;
+        border-radius: 12px;
+        box-shadow: 0px 2px 8px 0px #6E6B6714;
+        &-body {
+            p:hover {
+                color: $accent-200;
+            }
+        }
+        &-img {
+            border-radius: 4px;
+        }
+    }
+}
