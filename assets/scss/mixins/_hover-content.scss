@@ -1,0 +1,4 @@
+@mixin hover-content {
+    color: $accent-200;
+    transition: color .3s;
+}

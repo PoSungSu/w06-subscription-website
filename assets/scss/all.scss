@@ -6,6 +6,7 @@
 
 //custom config
 @import "./config/googleFont";
+@import "./config/gurmukhiFont";
 @import "./config/variables";
 
 // @import "./config/colors";
@@ -15,7 +16,7 @@
 
 //mixins
 @import "./mixins/bg-img";
-
+@import "./mixins/hover-content";
 
 // @import "../../node_modules/bootstrap";  //★重要載入全部檔案
 //==5.3版start==
@@ -78,7 +79,6 @@
 @import "./components/buttons";
 @import "./components/card";
 @import "./components/swiper";
-@import "./components/theme-box";
 
 //helpers
 @import "./helpers/bg-img-rwd";

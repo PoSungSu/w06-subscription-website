@@ -1,6 +1,24 @@
+$theme-border-radius: 1.25rem;
+
 .bg-banner {
     height: calc( 100vh - 60px );
 }
+
+.theme {
+    &-box {
+        background-color: rgba(0, 0, 0, 0.2);
+        @include border-top-start-radius($radius: $theme-border-radius);
+        @include border-bottom-end-radius($radius: $theme-border-radius);
+        @include media-breakpoint-up(lg){
+            height: 200px;
+        }
+    }
+    .card-hover:before {
+        @include border-top-start-radius($radius: $theme-border-radius);
+        @include border-bottom-end-radius($radius: $theme-border-radius);
+    }
+}
+
 .limitedEvent {
     h4 {
         color: $accent-200;
@@ -17,10 +35,73 @@
         }
     }
 }
+
+.hotSwiper {
+    &-nav {
+        box-shadow: 0px 2px 8px 0px #6E6B6714;
+        .nav-link {
+            color: $gray-600;
+        }
+        .nav-link:hover {
+            color: $accent-200;
+        }
+        .nav-link.active {
+            color: $gray-600;
+            background-color: $accent-100;
+            border-radius: 4px;
+        }
+    }
+
+    .tab-pane:not(:first-child) {
+        @include media-breakpoint-down(md) {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+
+    .card {
+        width: 324px;
+        &-text:hover {
+            @include hover-content;
+        }
+    }
+    .card-img {
+        .img-fluid {
+            border-radius: 4px;
+        }
+        @include media-breakpoint-up(md) {
+            .img-start {
+                border-radius: 20px 4px 4px 20px;
+            }
+            .img-end {
+                border-radius: 4px 20px 20px 4px;
+            }
+        }
+    }
+}
+
+.life {
+    h4:hover {
+        @include hover-content;
+    }
+}
+
+.projects {
+    .card {
+        width: 306px;
+        height: 236px;
+    }
+}
+
+
+
+
 @include media-breakpoint-up(lg) {
     .bg-banner {
         height: calc( 100vh - 205px );
     }
+
     .limitedEvent {
         h4 {
             color: $primary-400;
@@ -42,49 +123,10 @@
             }
         }
     }
+
+    .projects {
+        .card {
+            width: 100%;
+        }
+    }
 }
-.hotSwiper {
-    &-nav {
-        box-shadow: 0px 2px 8px 0px #6E6B6714;
-        .nav-link {
-            color: $gray-600;
-        }
-        .nav-link:hover {
-            color: $accent-200;
-        }
-        .nav-link.active {
-            color: $gray-600;
-            background-color: $accent-100;
-            border-radius: 4px;
-        }
-    }
-    // .swiper {
-    //     &-slide {
-    //         width: 324px;
-    //     }
-    // }
-    .tab-pane:not(:first-child) {
-        @include media-breakpoint-down(md) {
-            display: block;
-            opacity: 1;
-        }
-    }
-
-
-    .card {
-        width: 324px;
-    }
-    .card-img {
-        .img-fluid {
-            border-radius: 4px;
-        }
-        @include media-breakpoint-up(md) {
-            .img-start {
-                border-radius: 20px 4px 4px 20px;
-            }
-            .img-end {
-                border-radius: 4px 20px 20px 4px;
-            }
-        }
-    }
-    }
