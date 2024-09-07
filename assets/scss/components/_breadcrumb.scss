@@ -1,0 +1,9 @@
+.breadcrumb {
+    &-item {
+        letter-spacing: 0.05em;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+        font-weight: $font-weight-normal;
+    }
+}

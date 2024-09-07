@@ -82,6 +82,10 @@ $utilities: map-merge(
       map-get($utilities, "width"),
       ( responsive: true ),
     ),
+    "position": map-merge(
+      map-get($utilities, "position"),
+      ( responsive: true ),
+    ),
     //針對值增加選項
     "text-align": map-merge(
       map-get($utilities, "text-align"),

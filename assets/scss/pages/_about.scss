@@ -1,0 +1,29 @@
+.about-banner {
+    height: calc(100vh - 60px);
+    @include media-breakpoint-up(lg) {
+        height: calc(100vh - 124px);
+    }
+}
+
+.aboutUs {
+    .card-text li {
+        list-style: disc;
+    }
+}
+
+.importantEvents {
+    p {
+        color: #09090B;
+    }
+    h4 {
+        min-width: 38px;
+    }
+    @include media-breakpoint-up(lg) {
+        p {
+            max-width: 593px;
+        }
+        h4 {
+            width: 48px;
+        }
+    }
+}
